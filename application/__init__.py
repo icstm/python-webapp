@@ -1,10 +1,10 @@
 from flask import Flask
-from flask_wtf.crsf import CSRFProtect
+from flask_wtf.csrf import CSRFProtect
 
 app = Flask(__name__)
 
-crsf = CSRFProtect()
-crsf.init_app(app)
+csrf = CSRFProtect()
+csrf.init_app(app)
 
 
 from application import routes
